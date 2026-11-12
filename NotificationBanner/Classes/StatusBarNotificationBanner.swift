@@ -137,7 +137,7 @@ open class StatusBarNotificationBanner: BaseNotificationBanner {
         )
     }
 
-    override func layoutSubviews() {
+    open override func layoutSubviews() {
         let didChange = applyTitleTopOffsetIfNeeded(position: bannerPosition)
         super.layoutSubviews()
         if didChange {
